@@ -1,0 +1,53 @@
+from math import pi
+
+number1 = float(input("Enter a number "))
+number2 = float(input("Enter another number "))
+number3 = float(input("Enter a third number "))
+
+#Sum of the set
+def sum(number1, number2, number):
+    return (float(number1)+float(number2)+float(number3))
+total = sum(number1,number2,number3)
+
+#Averages the set
+def average(number1, number2, number3):
+        return ((float(number1)+float(number2)+float(number3))/3.0)
+avg = average(number1, number2, number3)
+
+#Multiplies the set
+def product(number1, number2, number3):
+    return (float(number1)*float(number2)*float(number3))
+prdct = product(number1, number2, number3)
+
+#Finds the smallest number in the set
+def smallest(number1, number2, number3):
+    return min(number1, number2, number3)
+smallest = smallest(number1, number2, number3)
+
+#Finds the largest number in the set
+def largest(number1, number2, number3):
+    return max(number1, number2, number3)
+largest = largest(number1, number2, number3)
+
+#Reporting results from above 5 functions
+print('Average is:', avg)
+print('Sum is: ', total)
+print('Product is: ', prdct)
+print('The smallest number is ', smallest)
+print('The largest number is ', largest)
+print("")
+
+#Prints details of the circle with input radius
+r = float(input("Enter the radius of the circle : "))
+print("The diameter of the circle with radius " + str(r) + " is: " +str(r*2))
+print("The circumference of the circle with radius " + str(r) + " is: " +str(2*pi*r))
+print("The area of the circle with radius " + str(r) + " is: " +str(pi*r**2))
+print("")
+
+#Checks if input number is even or odd
+number4 = int(input("Enter an integer "))
+if number4%2==0 and number !=0:
+        print("The number is even")
+else:
+        print("the number is odd")
+
